@@ -1,0 +1,85 @@
+@font-face {
+    font-family: bricolage-exbold;
+    src: url("./fonts/BricolageGrotesque_24pt-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: bricolage-med;
+    src: url("./fonts/BricolageGrotesque_24pt-Medium.ttf");
+}
+
+@font-face {
+    font-family: bricolage-light;
+    src: url("./fonts/BricolageGrotesque_24pt-Light.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(85, 176, 134);
+    width: 100%;
+}
+
+header {
+    font-size: 2vw;
+    font-family: bricolage-exbold;
+    color: rgb(254, 247, 233);
+    margin: 5vh auto;
+    text-align: center;
+}
+
+#questions {
+    margin: 5vh auto;
+    text-align: center;
+    font-size: 3vh;
+    font-family: bricolage-med;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer {
+    font-size: 2vh;
+    font-family: bricolage-light;
+    padding: 50px;
+    width: 30%;
+    min-width: 800px;
+    margin-top: 2vh;
+    text-align: left;
+    background-color: rgb(196, 222, 210);
+    border: rgb(56, 112, 86) 10px solid;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    filter: brightness(80%);
+}
+
+#next {
+    margin: 2vh 50% 0;
+    padding: 30px;
+    width: 15%;
+    min-width: 300px;
+    font-size: 1.5vh;
+    font-family: bricolage-med;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(254, 247, 233);
+}
+
+.correct {
+    background-color: rgb(70, 223, 70);
+    color: green;
+}
+
+.incorrect {
+    background-color: rgb(245, 102, 102);
+    color:rgb(255, 25, 25)
+}
+
+
+
